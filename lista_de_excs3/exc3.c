@@ -6,12 +6,5 @@ int main(){
     for (i=0;i<=10;i++){
         printf("%d x %d = %d\n",x,i,i*x);
     }
-    }
-  
-
-
-
-
-
-
+}
 }

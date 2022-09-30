@@ -1,8 +1,24 @@
 #include <stdio.h>
 
-int main(){
-    int i;
-    for (i=0;i<=10;i++){
-        printf("2 x %d = %d\n",i,i*2);
+int main()
+{
+    int p, q, cnt=0, i, dif;
+    scanf("%d%d", &p, &q);
+    int jump[q];
+    for(i=0; i<q; i++)
+        scanf("%d",  &jump[i]);
+    for(i=1; i<q; i++)
+    {
+        if(jump[i]>jump[i-1])
+         dif = (jump[i] - jump[i-1]);
+        else
+         dif = (jump[i-1] - jump[i]);
+        if(dif<=p)
+            cnt++;
     }
+    if(cnt== q-1)
+        printf("YOU WIN\n");
+    else
+        printf("GAME OVER\n");
+    return 0;
 }

@@ -13,5 +13,11 @@ int main(){
     for (x = 1; x<=z; x++) {
     printf("Numero %d: %d\n", x, numero[x]);
     }
+    int escolha;
+    printf("deseja que eu mostre os numeros guardados pra voce?\n");
+    scanf("%c",&escolha);
+    if(escolha=='s'){
+        printf("")
+    }
     return 0;
 }

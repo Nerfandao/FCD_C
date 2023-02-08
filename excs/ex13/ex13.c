@@ -11,6 +11,6 @@ float somafrac (int n) {
 }
 
 int main () {
-    printf("%lf\n",mult(4, 1));
+    printf("%f\n",somafrac(4, 1));
     return 0;
 }
